@@ -1,0 +1,34 @@
+.options {
+  margin-left: 5%;
+  height: 80%;
+  width: 40%;
+}
+
+.options h2 {
+  margin: 3rem 0 0;
+  font-size: 2.8125rem;
+  font-weight: 300;
+}
+
+.options p {
+  margin-bottom: 5rem;
+  color: var(--color-light);
+}
+
+.options img {
+  box-sizing: initial;
+  border: 10px solid #eee;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.colors {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+img.selected {
+  border-color: #2a2f36;
+  box-shadow: 1px 1px 8px 4px #ccc;
+}

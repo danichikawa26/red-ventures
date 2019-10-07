@@ -1,0 +1,70 @@
+.engine-options {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 2rem;
+  font-size: 1.375rem;
+  font-weight: 300; 
+  background-color: #f7f9fa;
+  cursor: pointer;
+  opacity: .6;
+  filter: grayscale(1);
+  transition: all .3s ease-in;
+}
+
+.engine-options p {  
+  display: inline-block;
+  margin: 0;
+}
+
+.kwh1 {
+  font-size: 2.125rem;
+}
+
+.type,
+.kwh2,
+.range {
+  font-weight: 500;
+}
+
+.type {
+  color: var(--color-primary);
+}
+
+.price {
+  position: absolute;
+  bottom: -40px;
+  right: 0;
+  font-weight: 500;
+  color: var(--color-primary);
+  visibility: hidden;
+  z-index: 50;
+}
+
+.select {
+  position: relative;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all .3s ease-in;
+}
+
+.selected,
+.engine-options:hover {
+  opacity: 1;
+  filter: grayscale(0)
+}
+
+.engine-options:hover .select,
+.selected .select {
+  background-color: var(--color-primary);
+}
+
+.selected .price,
+.engine-options:hover .price {
+  visibility: visible;
+}
