@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Auxiliar from '../hoc/Auxiliar';
-import './FooterItem.css';
+import './LandingFooter.css';
 
 const FooterItem = props => (
   <Auxiliar>

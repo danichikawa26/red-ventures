@@ -85,11 +85,6 @@ class Custom extends React.Component {
             wheels={this.state.wheels[this.state.wheelsSelected - 1]}
             totalPrice={totalPrice} />
         )
-        console.log(this.state.price);
-        console.log(this.state.engineSelected);
-        console.log(this.state.colorSelected);
-        console.log(this.state.wheelsSelected);
-        console.log(this.state.totalPrice);
       }
       
       if (step !== 'resume') {
@@ -100,7 +95,7 @@ class Custom extends React.Component {
             kwh={this.state.engine[this.state.engineSelected - 1].kwh}
             type={this.state.engine[this.state.engineSelected - 1].type}
             color={this.state.color[this.state.colorSelected - 1].id}
-            //wheels={this.state.wheels[this.state.wheelsSelected - 1].image}
+            wheels={this.state.wheels[this.state.wheelsSelected - 1].id}
             showColor={showColor}
             showWheels={showWheels} />
         )

@@ -6,9 +6,7 @@ import './NavigationItem.css';
 const NavigationItem = props => (
   <li className="navigationItem">
     <NavLink 
-      to={props.link}
-      exact={props.exact}
-      activeClassName="active">{props.children}</NavLink>
+      to={props.link}>{props.children}</NavLink>
   </li>
 );
 

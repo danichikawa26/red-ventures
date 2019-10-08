@@ -2,6 +2,7 @@
 .engine {
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
   width: 100%;
   height: 100vh;
   margin-top: -70px;
@@ -11,9 +12,22 @@
 }
 
 .figure  {
-  width: 50%;
+  width: 30%;
   text-align: center;
 }
+
+@media only screen and (max-width: 700px) {
+  .engine {
+    flex-direction: column;
+    height: 35vh;
+
+  }
+
+  img.figure {
+    transform: rotate(90deg);
+  }
+}
+
 
 
 @keyframes fade-in {

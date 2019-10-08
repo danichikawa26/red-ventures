@@ -4,7 +4,7 @@ import Auxiliar from '../hoc/Auxiliar';
 import Button from './Button';
 import './Landing.css';
 import imageCar from '../assets/car-home.png';
-import FooterItem from './FooterItem';
+import LadingFooter from './LandingFooter';
 
 const Landing = props => {
 
@@ -21,9 +21,9 @@ const Landing = props => {
         </div>
       </section>
       <footer className="footer">
-        <FooterItem number="2.5" abbr="s" description="From 0 to 100" />
-        <FooterItem number="420" abbr="mi" description="Miles range" />
-        <FooterItem number="250" abbr="mp/h" description="Max speed" />
+        <LadingFooter number="2.5" abbr="s" description="From 0 to 100" />
+        <LadingFooter number="420" abbr="mi" description="Miles range" />
+        <LadingFooter number="250" abbr="mp/h" description="Max speed" />
       </footer>
     </Auxiliar>
   )

@@ -21,7 +21,7 @@ const EngineOptions = props => {
         miles range
       </p>
       <p className="select"></p>
-      <span className="price">+${props.info.price.toLocaleString()}</span>
+      <span className="price">{props.info.price === 0 ? 'Included' : '+$' + props.info.price.toLocaleString()}</span>
     </div>
   )
 }

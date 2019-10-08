@@ -1,8 +1,5 @@
 import React from 'react';
 import axios from 'axios';
-import WheelSilver from '../assets/7.png';
-import WheelGraffiti from '../assets/8.png';
-import WheelPerformance from '../assets/9.png';
 
 import Wheels from '../components/Wheels';
 import './Wheel.css';
@@ -28,15 +25,11 @@ class Wheel extends React.Component {
   }
 
   render() {
-    let image = null;
     let options = null;
     let details = null;
 
     if (this.state.wheels) {
-      const imageSource = [WheelSilver, WheelGraffiti, WheelPerformance];
       let selected = this.state.selected - 1;
-
-      image = <figure className="figure"><img src={imageSource[selected]} alt="Wheel" /></figure>
 
       details = (
         <div className="details">
@@ -51,16 +44,12 @@ class Wheel extends React.Component {
           selectedWheel={this.selectedWheelHandler} />
       )
     }
-
-
-    console.log(this.state.selected);
     return (
-      <div className="wheels">
-        <div style={{width: '50%'}}>
-          {image}
+      <div className="wheels" style={{width: '50%'}}>
+        <div>
+          {options}
           {details}
         </div>
-          {options}
       </div>
     )
   }

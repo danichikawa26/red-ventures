@@ -16,22 +16,6 @@
   margin-bottom: -4rem;
 }
 
-@media only screen and (max-width: 1000px) {
-  .heroTitle {
-    margin-left: 10rem;
-  }
-}
-
-@media only screen and (max-width: 700px) {
-  .heroTitle {
-    margin-left: 2rem;
-  }
-
-  .hero img {
-    width: 100%;
-  }
-}
-
 .heroTitle p {
   margin: 0 0 0 5px;
   font-size: 1.875rem;
@@ -47,9 +31,21 @@
   line-height: 9rem;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 700px) {
+  .heroTitle {
+    margin-left: 2rem;
+  }
+
+  .hero img {
+    width: 100%;
+  }
+
   .heroTitle h1 {
-    font-size: 8rem;
+    font-size: 6rem;
+    letter-spacing: 0;
+  }
+  .heroTitle p {
+    margin-bottom: -30px;
   }
 }
 

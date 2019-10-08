@@ -10,14 +10,14 @@ const Wheels = props => {
   const alt = ["Wheel: silver", "Wheel: graffiti", "Wheel: performance"]
 
   return (
-    <section className="options">
+    <section className="wheels">
       <h2>Wheel</h2>
-      <div className="wheels">
+      <div className="wheel_option">
         {
           imageSource.map((image, index) => (
             image = (
               <img src={image} alt={alt[index]} key={index + 1} 
-                className={props.selected === (index + 1) ? "selected" : null}
+                className={props.selected === (index + 1) ? "wheel_selected" : "wheel_notSelected"}
                 onClick={() => props.selectedWheel(index + 1)}/>
             )
           ))

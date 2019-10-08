@@ -37,7 +37,7 @@ const Resume = props => {
           Final Price
           <span>{"$" + props.totalPrice.toLocaleString()}</span>
         </p>
-        <div className="rebuild"><Link className="button" to="/">REBUILD</Link></div>
+        <div className="rebuild"><Link className="button-rebuild" to="/">REBUILD</Link></div>
       </div>
     </section>
   )

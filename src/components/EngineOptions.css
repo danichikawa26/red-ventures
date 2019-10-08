@@ -39,8 +39,7 @@
   right: 0;
   font-weight: 500;
   color: var(--color-primary);
-  visibility: hidden;
-  z-index: 50;
+  display: none;
 }
 
 .select {
@@ -66,5 +65,24 @@
 
 .selected .price,
 .engine-options:hover .price {
-  visibility: visible;
+  display: block;
+}
+
+@media only screen and (max-width: 700px) {
+  .engine-options{
+    justify-content: space-between;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    padding: .9rem 1.5rem;
+  }
+
+  .select {
+    width: 10px;
+    height: 10px;
+  }
+
+  .selected .price, .engine-options:hover .price {
+    display: none;
+  }
+
 }

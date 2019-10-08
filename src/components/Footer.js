@@ -1,21 +1,33 @@
 import React from 'react';
 
 import Button from './Button';
+import Shadow from './FooterShadow';
 import './Footer.css';
 import red from '../assets/dot-red.png';
 import blue from '../assets/dot-blue.png';
 import grey from '../assets/dot-grey.png';
+import WheelSilver from '../assets/7.png';
+import WheelGraffiti from '../assets/8.png';
+import WheelPerformance from '../assets/9.png';
 
 const Footer = props => {
-  let imageSource;
+  let colorImage;
+  let wheelsImage;
   let buttonUrl = "/modelr/custom/color";
 
   if (props.color === 6)
-    imageSource = grey;
+    colorImage = grey;
   else if (props.color === 5)
-    imageSource = blue;
+    colorImage = blue;
   else
-    imageSource = red;
+    colorImage = red;
+
+  if (props.wheels === 7)
+    wheelsImage = WheelSilver;
+  else if (props.wheels === 8)
+    wheelsImage = WheelGraffiti;
+  else
+    wheelsImage = WheelPerformance;
 
   if (props.showWheels) {
     buttonUrl = "/modelr/custom/resume";
@@ -26,12 +38,15 @@ const Footer = props => {
 
   return (
     <footer className="footer">
-      <span>Total <span>${props.price}</span></span>
-      <span>Model R</span>
-      <span style={{ fontWeight: 500 }}>{props.kwh} <span className="type">{props.type}</span></span>
-      <span className={props.showColor ? null : "hidden"}><img src={imageSource} alt="cor" /></span>
-      <span className={props.showWheels ? null : "hidden"}><img style={{ width: '3rem' }} src={props.wheels} alt="wheels" /></span>
-      <Button text="NEXT" url={buttonUrl} />
+      <div className="total-price">
+        <span>Total</span>
+        <span className="value-price">${props.price}</span>
+      </div>
+      <span className="model-r">Model R</span>
+      <span className="motor" style={{ fontWeight: 500 }}>{props.kwh} <span className="type">{props.type}</span></span>
+      <span className={"color-footer " + (props.showColor ? null : "hidden")}><img src={colorImage} alt="cor" /></span>
+      <span className={props.showWheels ? null : "hidden"}><img style={{ width: '3rem' }} src={wheelsImage} alt="wheels" /></span>
+      <Button text="next" url={buttonUrl} />
     </footer>
   )
 }

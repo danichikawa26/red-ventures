@@ -50,7 +50,7 @@ p.finalPrice {
   font-size: 2rem;
 }
 
-.button {
+.button-rebuild {
   font-family: inherit;
   font-size: 1.1rem;
   font-weight: 500;
@@ -60,7 +60,7 @@ p.finalPrice {
   text-decoration: none;
 }
 
-.button::after {
+.button-rebuild::after {
   content: url('../assets/rebuild.svg');
   display: inline-block;
   position: relative;
@@ -70,7 +70,7 @@ p.finalPrice {
   transition: all 1s ease-in;
 }
 
-.button:hover::after {
+.button-rebuild:hover::after {
   transform: rotate(360deg);
 }
 

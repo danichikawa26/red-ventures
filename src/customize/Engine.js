@@ -38,7 +38,7 @@ class Engine extends React.Component {
       const imageSource = [EngineImage75, EngineImage100, EngineImage125];
       let selected = this.state.selected - 1;
           
-      image = <figure className="figure"><img src={imageSource[selected]} alt="Car" /></figure>
+      image = <img src={imageSource[selected]} alt="Car" className="figure"/>
 
       options = (
         <Engines
@@ -48,7 +48,6 @@ class Engine extends React.Component {
           selected={this.state.selected} />
       )
     }
-    console.log(this.state.selected);
     return (
       <section className="engine">
         {image}

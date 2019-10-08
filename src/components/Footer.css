@@ -1,24 +1,33 @@
 .footer {
-  position: relative;
+  position: fixed;
+  bottom: 0;
+  left: 0;
   height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 10;
+  width: 100%;
+  padding: 0 13rem;
+  border-top: 1px solid gray;
 }
 
 .footer img {
   width: 1.4rem;
 }
 
-.footer span:not(:first-of-type) {
-  font-size: 1.125rem;
+.total-price {
+  display: flex;
+  flex-direction: column;
 }
 
-.price {
-  display: block;
-  font-size: 2rem;
+.value-price {
   color: var(--color-primary);
+  font-size: 2rem;
+}
+
+.motor {
+  font-weight: 500;
 }
 
 .type {
@@ -27,4 +36,15 @@
 
 .hidden {
   opacity: 0;
+}
+
+@media only screen and (max-width: 700px) {
+  .footer {
+    padding: 0 .9rem;
+  }
+
+  .model-r, .motor, .footer.type, .color-footer, .footer img {
+    display: none;
+  }
+
 }
