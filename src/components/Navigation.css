@@ -13,4 +13,8 @@
     flex-shrink: 0;
     margin-left: 40px;
   }
+
+  .nav-mobile {
+    display: none;
+  }
 }

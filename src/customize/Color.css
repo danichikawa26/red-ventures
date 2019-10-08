@@ -10,22 +10,18 @@
   animation: fade-in .8s ease-in forwards;
 }
 
-.figure  {
-  text-align: center;
-}
-
-.details {
-  margin: -3rem 0 0 25%;
+.color-details {
+  margin: -4rem 0 0 20%;
   font-size: 1.375rem;
   line-height: normal;
 }
 
-.label,
-.price {
+.color-label,
+.color-price {
   margin: 0;
 }
 
-.price {
+.color-price {
   color: var(--color-primary);
 }
 

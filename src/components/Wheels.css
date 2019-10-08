@@ -1,30 +1,41 @@
 .wheels {
   display: flex;
   flex-direction: column;
-}
-
-.wheel_option {
-  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  margin-top: -70px;
+  margin-bottom: -100px;
+  padding: 70px 0 100px 0;
+  opacity: 0;
+  animation: fade-in .8s ease-in forwards;
 }
 
 .wheels h2 {
-  margin-top: -3rem;
+  margin-bottom: 4rem;
   font-size: 2.8125rem;
   font-weight: 300;
 }
 
-.wheel_selected, 
-.wheel_notSelected {
+.wheel_images {
+  display: flex;
+}
+
+.wheel-details {
   display: flex;
   flex-direction: column;
+}
+
+.details-notSelected {
+  display: none;
+}
+
+.wheel_selected, 
+.wheel_notSelected {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-}
-
-.wheel_selected figcaption,
-.wheel_notSelected figcaption {
-  margin-top: 2.5rem;
 }
 
 .wheel_notSelected {
@@ -33,12 +44,7 @@
 }
 
 img.wheel_notSelected {
-  width: 80%;
-  transition: all .3s ease-in;
-}
-
-.wheel_notSelected p {
-  opacity: 0;
+  width: 90%;
   transition: all .3s ease-in;
 }
 
@@ -47,6 +53,17 @@ img.wheel_notSelected {
   opacity: 1;
 }
 
-img.wheel_notSelected:hover {
+img.wheel_notSelected:hover, .wheel_selected {
   width: 100%;
+}
+
+.wheel-label,
+.wheel-price {
+  font-size: 1.375rem;
+  line-height: 1.375rem;
+  text-align: center;
+}
+
+.wheel-price {
+  color: var(--color-primary);
 }

@@ -2,7 +2,6 @@ import React from 'react';
 import axios from 'axios';
 
 import Wheels from '../components/Wheels';
-import './Wheel.css';
 
 class Wheel extends React.Component {
 
@@ -26,30 +25,19 @@ class Wheel extends React.Component {
 
   render() {
     let options = null;
-    let details = null;
 
     if (this.state.wheels) {
-      let selected = this.state.selected - 1;
-
-      details = (
-        <div className="details">
-          <p className="label">{this.state.wheels[selected].label}</p>
-          <p className="price">{this.state.wheels[selected].price === 0 ? 'Included' : '+$' + this.state.wheels[selected].price.toLocaleString()}</p>
-        </div>
-      )
-
       options = (
         <Wheels 
           selected={this.state.selected}
-          selectedWheel={this.selectedWheelHandler} />
+          selectedWheel={this.selectedWheelHandler}
+          wheelLabel={this.state.wheels[this.state.selected - 1].label}
+          wheelPrice={this.state.wheels[this.state.selected - 1].price} />
       )
     }
     return (
-      <div className="wheels" style={{width: '50%'}}>
-        <div>
+      <div style={{ marginTop: '100px' }}>
           {options}
-          {details}
-        </div>
       </div>
     )
   }

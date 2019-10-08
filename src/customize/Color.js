@@ -37,12 +37,12 @@ class Color extends React.Component {
       const imageSource = [CarRed, CarBlue, CarGrey];
       let selected = this.state.selected - 1;
 
-      image = <figure className="figure"><img src={imageSource[selected]} alt="Car" /></figure>
+      image = <img src={imageSource[selected]} alt="Car" />
 
       details = (
-        <div className="details">
-          <p className="label">{this.state.color[selected].label}</p>
-          <p className="price">{this.state.color[selected].price === 0 ? 'Included' : '+$' + this.state.color[selected].price.toLocaleString()}</p>
+        <div className="color-details">
+          <p className="colorlabel">{this.state.color[selected].label}</p>
+          <p className="color-price">{this.state.color[selected].price === 0 ? 'Included' : '+$' + this.state.color[selected].price.toLocaleString()}</p>
         </div>
       )
       options = <Colors desc={this.state.description} selected={this.state.selected} selectedColor={this.selectedColorHandler} />
