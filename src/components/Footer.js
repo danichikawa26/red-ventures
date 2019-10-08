@@ -1,7 +1,6 @@
 import React from 'react';
 
 import Button from './Button';
-import Shadow from './FooterShadow';
 import './Footer.css';
 import red from '../assets/dot-red.png';
 import blue from '../assets/dot-blue.png';

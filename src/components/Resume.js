@@ -10,9 +10,7 @@ const Resume = props => {
 
   return (
     <section className="final">
-      <figure>
         <img src={props.image} alt="Final car" />
-      </figure>
       <div className="details">
         <h2>Your <span style={{ fontWeight: 400 }}>Model <span className="model">R</span></span></h2>
         <p>

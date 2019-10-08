@@ -12,10 +12,10 @@ const Navigation = () => (
       <NavLink to="/"><img src={logo} alt="Red Venture logo" /></NavLink>
       <ul>
         <NavigationItem link="/modelr">Model R</NavigationItem>
-        <NavigationItem link="/iq" className="nav-mobile">Model IQ</NavigationItem>
-        <NavigationItem link="/mobi" className="nav-mobile">Model Mobi</NavigationItem>
-        <NavigationItem link="/charlie" className="nav-mobile">Model Charlie</NavigationItem>
-        <NavigationItem link="/italy" className="nav-mobile">Model Italy</NavigationItem>
+        <NavigationItem link="/iq">Model IQ</NavigationItem>
+        <NavigationItem link="/mobi">Model Mobi</NavigationItem>
+        <NavigationItem link="/charlie">Model Charlie</NavigationItem>
+        <NavigationItem link="/italy">Model Italy</NavigationItem>
       </ul>
     </nav>
   </Auxiliar>

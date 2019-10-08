@@ -37,7 +37,7 @@ class Color extends React.Component {
       const imageSource = [CarRed, CarBlue, CarGrey];
       let selected = this.state.selected - 1;
 
-      image = <img src={imageSource[selected]} alt="Car" />
+      image = <img src={imageSource[selected]} alt="Car" className="color-image" />
 
       details = (
         <div className="color-details">
@@ -49,7 +49,7 @@ class Color extends React.Component {
     }
     return (
       <div className="color">
-        <div style={{width: '50%'}}>
+        <div>
           {image}
           {details}
         </div>

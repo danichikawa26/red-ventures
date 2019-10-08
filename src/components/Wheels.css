@@ -67,3 +67,9 @@ img.wheel_notSelected:hover, .wheel_selected {
 .wheel-price {
   color: var(--color-primary);
 }
+
+@media only screen and (max-width: 700px) {
+  .wheels {
+    padding: 0;
+  }
+}

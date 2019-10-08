@@ -4,7 +4,7 @@ import Auxiliar from '../hoc/Auxiliar';
 import Button from './Button';
 import './Landing.css';
 import imageCar from '../assets/car-home.png';
-import LadingFooter from './LandingFooter';
+import LandingFooter from './LandingFooter';
 
 const Landing = props => {
 
@@ -20,10 +20,10 @@ const Landing = props => {
           <Button text="BEGIN" url={props.match.url + '/custom/engine'} />
         </div>
       </section>
-      <footer className="footer">
-        <LadingFooter number="2.5" abbr="s" description="From 0 to 100" />
-        <LadingFooter number="420" abbr="mi" description="Miles range" />
-        <LadingFooter number="250" abbr="mp/h" description="Max speed" />
+      <footer className="landing-footer">
+        <LandingFooter number="2.5" abbr="s" description="From 0 to 100" />
+        <LandingFooter number="420" abbr="mi" description="Miles range" />
+        <LandingFooter number="250" abbr="mp/h" description="Max speed" />
       </footer>
     </Auxiliar>
   )

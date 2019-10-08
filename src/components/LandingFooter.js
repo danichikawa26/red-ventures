@@ -3,7 +3,7 @@ import React from 'react';
 import Auxiliar from '../hoc/Auxiliar';
 import './LandingFooter.css';
 
-const FooterItem = props => (
+const LandingFooter = props => (
   <Auxiliar>
       <div className="footerItem">
         <span className="number">{props.number}</span><span className="abbr">{props.abbr}</span>
@@ -12,4 +12,4 @@ const FooterItem = props => (
   </Auxiliar>
 );
 
-export default FooterItem;
+export default LandingFooter;

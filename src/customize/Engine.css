@@ -19,16 +19,15 @@
 @media only screen and (max-width: 700px) {
   .engine {
     flex-direction: column;
-    height: 35vh;
+    height: 90vh;
 
   }
 
   img.figure {
     transform: rotate(90deg);
+    margin-top: 50px;
   }
 }
-
-
 
 @keyframes fade-in {
   to {

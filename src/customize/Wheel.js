@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-
+import './Wheel.css'
 import Wheels from '../components/Wheels';
 
 class Wheel extends React.Component {
@@ -36,7 +36,7 @@ class Wheel extends React.Component {
       )
     }
     return (
-      <div style={{ marginTop: '100px' }}>
+      <div className="wheel">
           {options}
       </div>
     )

@@ -1,6 +1,5 @@
   
 .footerItem {
-  margin-bottom: 1rem;
   padding: 2px;
   border-bottom: 3px solid var(--color-primary);
 }

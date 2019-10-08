@@ -9,13 +9,8 @@
   animation: fade-in .8s ease-in forwards;
 }
 
-.final figure,
 .final .details {
   width: 50%;
-}
-
-.final figure {
-  text-align: center;
 }
 
 .final h2 {
@@ -77,6 +72,34 @@ p.finalPrice {
 .rebuild {
   margin-top: 5rem;
   text-align: center;
+}
+
+@media only screen and (max-width: 700px) {
+  .final {
+    flex-direction: column;
+  }
+  
+  .final img {
+    width: 100%;
+    margin-top: 70px;
+  }
+
+  .final h2 {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+
+  .final .details {
+    width: 100%;
+  }
+
+  .final p {
+    margin: 0;
+  }
+
+  .rebuild {
+    margin-top: 2rem;
+  }
 }
 
 @keyframes fade-in {

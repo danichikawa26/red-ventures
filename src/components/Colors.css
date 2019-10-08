@@ -32,3 +32,35 @@ img.selected {
   border-color: #2a2f36;
   box-shadow: 1px 1px 8px 4px #ccc;
 }
+
+
+
+@media only screen and (max-width: 700px) {
+  .options {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .options h2 {
+    margin: 0;
+    font-size: 2rem;
+    margin-top: 35px;
+  }
+
+  .options p {
+    margin-bottom: 1rem;
+  }
+
+  .options img {
+    width: 30px;
+    border: 5px solid #eee;
+  }
+
+  .colors {
+    margin-top: 40px;
+  }
+
+  img.selected {
+    border-color: #2a2f36;
+  }
+}

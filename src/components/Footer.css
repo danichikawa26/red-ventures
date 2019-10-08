@@ -41,6 +41,7 @@
 @media only screen and (max-width: 700px) {
   .footer {
     padding: 0 .9rem;
+    height: 70px;
   }
 
   .model-r, .motor, .footer.type, .color-footer, .footer img {

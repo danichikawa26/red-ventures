@@ -16,8 +16,8 @@ const Wheels = props => {
         {
           imageSource.map((image, index) => (
             image = (
-              <div>
-                <img src={image} alt={alt[index]} key={index + 1} 
+              <div key={index + 1}>
+                <img src={image} alt={alt[index]}
                   className={props.selected === (index + 1) ? "wheel_selected" : "wheel_notSelected"}
                   onClick={() => props.selectedWheel(index + 1)}/>
                 <div className={props.selected === (index + 1) ? "wheel-details" : "details-notSelected"}>

@@ -30,3 +30,21 @@
     opacity: 1;
   }
 }
+
+@media only screen and (max-width: 700px) {
+  .color {
+    flex-direction: column;
+  }
+
+  .color-image {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .color-details {
+    text-align: center;
+    margin-top: -50px;
+    margin-left: 0;
+    font-size: 1rem;
+  }
+}
