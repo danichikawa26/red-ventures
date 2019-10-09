@@ -1,9 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-
-import Auxiliar from '../hoc/Auxiliar';
+import Auxiliar from '../../Auxiliar/Auxiliar';
 import './Navigation.css';
-import logo from '../assets/RV-logo.svg';
+import logo from '../../assets/RV-logo.svg';
 import NavigationItem from './NavigationItem';
 
 const Navigation = () => (

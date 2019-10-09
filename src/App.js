@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 
-import Layout from './hoc/Layout';
-import Landing from './components/Landing';
-import Custom from './customize/Custom';
-import OtherModels from './components/OtherModels';
+import Layout from './Auxiliar/Layout';
+import Landing from './components/Landing/Landing';
+import Custom from './ModelR/ModelR';
+import OtherModels from './components/NavigationBar/OtherModels';
 
 class App extends React.Component {
 

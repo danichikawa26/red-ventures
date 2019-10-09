@@ -1,13 +1,12 @@
 import React from 'react';
-
 import Button from './Button';
 import './Footer.css';
-import red from '../assets/dot-red.png';
-import blue from '../assets/dot-blue.png';
-import grey from '../assets/dot-grey.png';
-import WheelSilver from '../assets/7.png';
-import WheelGraffiti from '../assets/8.png';
-import WheelPerformance from '../assets/9.png';
+import red from '../../assets/dot-red.png';
+import blue from '../../assets/dot-blue.png';
+import grey from '../../assets/dot-grey.png';
+import WheelSilver from '../../assets/7.png';
+import WheelGraffiti from '../../assets/8.png';
+import WheelPerformance from '../../assets/9.png';
 
 const Footer = props => {
   let colorImage;

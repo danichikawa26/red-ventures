@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import './Wheel.css'
-import Wheels from '../components/Wheels';
+import Wheels from '../components/Wheels/Wheels';
 
 class Wheel extends React.Component {
 

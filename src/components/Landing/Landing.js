@@ -1,9 +1,8 @@
 import React from 'react';
-
-import Auxiliar from '../hoc/Auxiliar';
-import Button from './Button';
+import Auxiliar from '../../Auxiliar/Auxiliar';
+import Button from '../Common/Button';
 import './Landing.css';
-import imageCar from '../assets/car-home.png';
+import imageCar from '../../assets/car-home.png';
 import LandingFooter from './LandingFooter';
 
 const Landing = props => {

@@ -40,8 +40,6 @@
   color: var(--color-primary);
 }
 
-
-
 p.finalPrice {
   font-size: 2rem;
 }
@@ -57,7 +55,7 @@ p.finalPrice {
 }
 
 .button-rebuild::after {
-  content: url('../assets/rebuild.svg');
+  content: url('../../assets/rebuild.svg');
   display: inline-block;
   position: relative;
   margin-left: 5px;

@@ -4,7 +4,7 @@ import CarRed from '../assets/4.png';
 import CarBlue from '../assets/5.png';
 import CarGrey from '../assets/6.png';
 import './Color.css';
-import Colors from '../components/Colors';
+import Colors from '../components/Colors/Colors';
 
 class Color extends React.Component {
 

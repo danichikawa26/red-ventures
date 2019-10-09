@@ -1,7 +1,7 @@
 import React from 'react';
-import WheelSilver from '../assets/7.png';
-import WheelGraffiti from '../assets/8.png';
-import WheelPerformance from '../assets/9.png';
+import WheelSilver from '../../assets/7.png';
+import WheelGraffiti from '../../assets/8.png';
+import WheelPerformance from '../../assets/9.png';
 import './Wheels.css';
 
 const Wheels = props => {

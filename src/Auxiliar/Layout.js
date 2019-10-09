@@ -1,6 +1,6 @@
 import React from 'react';
-import Auxiliar from './Auxiliar';
-import Navigation from '../components/Navigation';
+import Auxiliar from '../Auxiliar/Auxiliar';
+import Navigation from '../components/NavigationBar/Navigation';
 
 class Layout extends React.Component {
 

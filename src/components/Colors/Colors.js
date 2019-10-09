@@ -1,7 +1,7 @@
 import React from 'react';
-import dotRed from '../assets/dot-red.png';
-import dotBlue from '../assets/dot-blue.png';
-import dotGrey from '../assets/dot-grey.png';
+import dotRed from '../../assets/dot-red.png';
+import dotBlue from '../../assets/dot-blue.png';
+import dotGrey from '../../assets/dot-grey.png';
 import './Colors.css';
 
 const Colors = props => {

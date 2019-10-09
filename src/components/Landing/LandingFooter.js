@@ -1,6 +1,5 @@
 import React from 'react';
-
-import Auxiliar from '../hoc/Auxiliar';
+import Auxiliar from '../../Auxiliar/Auxiliar';
 import './LandingFooter.css';
 
 const LandingFooter = props => (

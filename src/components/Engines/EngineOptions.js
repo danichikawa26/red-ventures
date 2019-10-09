@@ -1,5 +1,4 @@
 import React from 'react';
-
 import './EngineOptions.css';
 
 const EngineOptions = props => {
