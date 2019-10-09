@@ -1,5 +1,12 @@
-- Baixar e configurar Linter & Prettier
-- Arrumar CSS da Wheel
-- Arrumar img da Wheel do footer
-- Revisar código (nomes das variaveis, dos arquivos, etc)
-- Responsividade
+Model R App
+
+This project is car customization made for Red Ventures test.
+
+To do so, it was used React with the [Create React App](https://github.com/facebook/create-react-app)
+To run this project on your localhost, clone this repository and run the commands:
+
+`npm install`
+
+`npm start`
+
+It will automatically open [http://localhost:3000](http://localhost:3000) on your browser.
